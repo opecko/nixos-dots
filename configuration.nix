@@ -68,7 +68,7 @@
   users.users."ondra" = {
     isNormalUser = true;
     description = "Ondra";
-    extraGroups = [ "networkmanager" "wheel" "uinput" ];
+    extraGroups = [ "networkmanager" "wheel" "uinput" "dialout" ];
 
     shell = pkgs.zsh;
     packages = with pkgs; [];
