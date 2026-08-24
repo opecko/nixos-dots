@@ -135,6 +135,7 @@
   programs.gpu-screen-recorder.enable = true;
   programs.zsh.enable = true;
   programs.kdeconnect.enable = true;
+  programs.lazygit.enable = true;
  
   programs.obs-studio.enable = true;
   programs.steam.enable = true;
