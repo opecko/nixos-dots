@@ -171,7 +171,6 @@
   services.gnome.gnome-keyring.enable = true;
   services.dbus.packages = [ pkgs.gnome-keyring ];
 
-
   security.pam.services.greetd = {
     enableGnomeKeyring = true;
   };

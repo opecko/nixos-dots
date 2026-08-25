@@ -48,7 +48,7 @@
     enable = true;
     enableZshIntegration = true;
     settings = builtins.fromJSON ''
-    {
+{
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "version": 4,
   "final_space": true,
@@ -69,7 +69,7 @@
           "type": "text",
           "style": "plain",
           "powerline_symbol": "\ue0d2",
-          "template": "in ",
+          "template": "in",
           "foreground": "#ffffff",
           "background": "transparent"
         },
@@ -77,9 +77,13 @@
           "type": "path",
           "style": "plain",
           "powerline_symbol": "\ue0d2",
-          "template": "{{ .Path }}",
+          "template": " {{ .Path }} ",
           "foreground": "cyan",
-          "background": "transparent"
+          "background": "transparent",
+          "options": {
+            "style": "full",
+            "home_icon": "\uf015"
+          }
         }
       ]
     },
