@@ -123,6 +123,7 @@
     ffmpeg
     mullvad-vpn
     vscode.fhs
+    dbeaver-bin
   ];
 
   programs.hyprland.enable = true;
