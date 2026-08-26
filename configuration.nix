@@ -125,7 +125,7 @@
     vscode.fhs
     dbeaver-bin
     prusa-slicer
-    davinci-resolve
+    kdePackages.kdenlive
   ];
 
   programs.hyprland.enable = true;
