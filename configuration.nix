@@ -124,6 +124,8 @@
     mullvad-vpn
     vscode.fhs
     dbeaver-bin
+    prusa-slicer
+    davinci-resolve
   ];
 
   programs.hyprland.enable = true;
