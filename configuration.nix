@@ -20,11 +20,12 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  # nvidia modesetting
   boot.kernelParams = [
     "nvidia-drm.modeset=1"
     "systemd.tpm2_wait=0"
   ];
+
+  boot.kernelModules = [ "sr_mod" ];
 
 
   networking.hostName = "ONDRA-PC"; # Define your hostname.
