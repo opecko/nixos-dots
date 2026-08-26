@@ -127,6 +127,7 @@
     dbeaver-bin
     prusa-slicer
     kdePackages.kdenlive
+    kdePackages.kio-extras
   ];
 
   programs.hyprland.enable = true;
