@@ -128,6 +128,7 @@
     prusa-slicer
     kdePackages.kdenlive
     kdePackages.kio-extras
+    kdePackages.kcalc
   ];
 
   programs.hyprland.enable = true;
