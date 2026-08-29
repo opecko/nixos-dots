@@ -181,7 +181,7 @@
   };
 
   services.mpd = {
-    enable = true;
+    enable = false;
     user = "ondra";
   
   
