@@ -18,7 +18,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_6_12;
 
   boot.kernelParams = [
     "nvidia-drm.modeset=1"
@@ -129,6 +129,7 @@
     kdePackages.kdenlive
     kdePackages.kio-extras
     kdePackages.kcalc
+    bitwarden-desktop
   ];
 
   programs.hyprland.enable = true;
@@ -148,11 +149,14 @@
   programs.gamemode.enable = true;
 
 
-  programs.seahorse.enable = true;
   programs.dconf.enable = true;
   
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-39.8.10"
+  ];
+
 
   services.flatpak.enable = true;
   services.tailscale.enable = true;
@@ -172,9 +176,6 @@
   services.openssh.enable = true;
   services.gvfs.enable = true;
   services.dbus.enable = true;
-
-  services.gnome.gnome-keyring.enable = true;
-  services.dbus.packages = [ pkgs.gnome-keyring ];
 
   security.pam.services.greetd = {
     enableGnomeKeyring = true;
